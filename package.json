@@ -4,8 +4,14 @@
   "main": "index.js",
   "author": "Vishwajeet Raj",
   "license": "MIT",
+  "scripts": {
+    "babel": "babel src/playground/counter-example.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "liveserver": "live-server public",
+    "start":"npm-run-all --parallel liveserver babel"
+  },
   "dependencies": {
     "babel-preset-env": "1.5.2",
-    "babel-preset-react": "6.24.1"
+    "babel-preset-react": "6.24.1",
+    "npm-run-all": "^4.1.5"
   }
 }
