@@ -5,7 +5,7 @@
   "author": "Vishwajeet Raj",
   "license": "MIT",
   "scripts": {
-    "babel": "babel src/playground/counter-example.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "liveserver": "live-server public",
     "start":"npm-run-all --parallel liveserver babel"
   },
