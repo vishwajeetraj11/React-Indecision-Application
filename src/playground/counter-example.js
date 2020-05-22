@@ -11,6 +11,22 @@ class Counter extends React.Component {
     };
   }
 
+  componentDidMount(){
+    const count = parseInt(localStorage.getItem('count'), 10);
+    if(!NaN(count)){
+
+      this.setState( () => ({count}));
+    }
+
+  }
+
+  componentDidUpdate(prevProp, prevState){
+
+    if(prevState.count !== this.state.count) {
+      localStorage.setItem('count', this.state.count);
+    }
+  }
+
   // STEP 3: Change the state based on an event.
   handleAddOne() {
     this.setState( (prevState) => {
@@ -47,6 +63,7 @@ class Counter extends React.Component {
     );
   }
 }
+
 
 ReactDOM.render(<Counter />, document.querySelector('#app'));
 
