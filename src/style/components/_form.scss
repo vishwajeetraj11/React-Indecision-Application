@@ -1,0 +1,40 @@
+.input{
+   flex: 1;
+   padding: 1rem;
+   padding-left: 2rem;
+   background: $dark-blue;
+   border: none;
+   border-bottom: 2px solid darken($dark-blue, 10%);
+   color: darken(#fff, 10%);
+   
+}
+
+.form {
+    width: inherit;
+    display: flex;
+    padding: $m-size;
+    justify-content: space-between;
+}
+
+.error{
+    color: $off-white;
+    display: flex;
+    justify-content: center;
+    padding: $m-size;
+    border: 1px solid darken($off-white, 10%);
+}
+
+@media (max-width: 45rem) {
+    .form {
+        width: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        padding: $m-size;
+        justify-content: space-between;
+    }
+    
+    .form button {
+        margin-top: 0.7rem;
+        width: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+// Widget Header
+
+.widget {
+    background-color: $light-blue;
+    margin-bottom: $l-size;
+}
+
+.widget-header {
+    background-color: $blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.widget-default-title{
+    color: $off-white;
+}
+.placeholder{
+    display: flex;
+    justify-content: center;
+    padding: $l-size 0;
+    color: $off-white;
+    border-bottom: 1px solid lighten($light-blue, 10%);
+}
